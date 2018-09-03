@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>段落、强调和对齐</title>
+<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<p class="lead">
+		段落是排版中另一个重要元素之一。在Bootstrap中为文本设置了一个全局的文本样式（这里所说的文本是指正文文本）：
+	</p>
+	<p>
+		1、全局文本字号为14px(font-size)。
+	</p>
+	<p>
+		2、行高为1.42857143（line-height），大约是20px，该数值是通过LESS编译器计算出来的。
+	</p>
+	<p>
+		3、颜色为深灰色（#333）；
+	</p>
+	<p>
+		4、字体为"Helvetica Neue", Helvetica, Arial, sans-serif;（font-family），或许这样的字体对我们中文并不太合适，但在实际项目中，大家可以根据自己的需求进行重置，在此我们不做过多阐述，我们回到这里。该设置都定义在body元素上，由于这几个属性都是继承属性，所以Web页面中文本（包括段落p元素）如无重置都会具有这些样式效果。
+	</p>
+	
+	<br>
+
+	正常字体<br>
+	<strong>字体加粗一</strong><br>
+	<b>字体加粗二</b><br>
+	<em>斜体一</em><br>
+	<i>斜体二</i><br>
+	<cite>引用</cite><br><br>
+
+	<!--强调类-->
+	<div class="text-muted">.text-muted 效果</div>
+	<div class="text-primary">.text-primary效果</div>
+	<div class="text-success">.text-success效果</div>
+	<div class="text-info">.text-info效果</div>
+	<div class="text-warning">.text-warning效果</div>
+	<div class="text-danger">.text-danger效果</div>
+	<br>
+
+	<!--文本对齐类-->
+	<p class="text-left">我居左</p>
+	<p class="text-center">我居中</p>
+	<p class="text-right">我居右</p>
+	<p class="text-justify">我两端对齐There is clearly a need for CSS to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The code remains the same, the only thing that has changed is the external .css file. </p>
+
+	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
