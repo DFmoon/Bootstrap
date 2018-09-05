@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--设置为可视区域宽度，原始缩放为1-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>   
+        <title>Alert</title>   
         <!-- Bootstrap -->
         <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet">     
         <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
@@ -15,26 +15,31 @@
         <![endif]-->
     </head>
     <body>
-        <div class="media">
-          <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-            <div class="media mt-3">
-              <img class="pr-3" src=".../64x64" alt="Generic placeholder image">
-              <div class="media-body">
-                <h5 class="mt-0">Media heading</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-          </div>
-        </div>
-        
+		<div class="alert alert-success">
+			<h2 class="alert-heading">Well done!</h4>
+			This is a <a href="#" class="alert-link">success</a> alert—check it out!
+		</div>
+		<div class="alert alert-danger">
+			This is a <a href="#" class="alert-link">danger</a> alert—check it out!
+		</div>
+		<div class="alert alert-warning">
+			This is a <a href="#" class="alert-link">warning</a> alert—check it out!
+		</div>
+		<div class="alert alert-info">
+			This is a <a href="#" class="alert-link">info</a> alert—check it out!
+		</div>
+		
+		<!--结合js添加关闭功能-->
+        <div class="alert alert-warning alert-dismissible fade show">
+		  	<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+		 	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    	<span aria-hidden="true">&times;</span>
+		  	</button>
+		</div>
         <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
         <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
         <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
     </body>
 </html>
-    
+		

@@ -8,6 +8,7 @@
 <body>
 	<h1>基础表格</h1>
 	<table class="table">
+		<caption>基础表格</caption>
 		<thead>
 			<tr class="table-active">
 				<th>表格标题</th>
@@ -16,12 +17,48 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
+			<tr class="table-success">
 				<td>表格单元格</td>
 				<td>表格单元格</td>
 				<td>表格单元格</td>
 			</tr>
-			<tr>
+			<tr class="table-danger">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="table-warning">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="table-info">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<!--颜色加重-->
+			<tr class="bg-primary">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="bg-success">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="bg-danger">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="bg-warning">
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+				<td>表格单元格</td>
+			</tr>
+			<tr class="bg-info">
 				<td>表格单元格</td>
 				<td>表格单元格</td>
 				<td>表格单元格</td>
@@ -31,8 +68,9 @@
 
 	<h1>斑马线表格</h1>
 	<table class="table table-striped">
+		<caption>斑马线表格</caption>
 		<thead>
-			<tr class="table-success">
+			<tr>
 				<th>表格标题</th>
 				<th>表格标题</th>
 				<th>表格标题</th>
@@ -64,8 +102,9 @@
 
 	<h1>带边框的表格</h1>
 	<table class="table table-bordered">
+		<caption>带边框的表格</caption>
 		<thead>
-			<tr class="table-info">
+			<tr>
 				<th>表格标题</th>
 				<th>表格标题</th>
 				<th>表格标题</th>
@@ -97,8 +136,9 @@
 
 	<h1>鼠标悬浮高亮的表格</h1>
 	<table class="table table-striped table-bordered table-hover">
+		<caption>鼠标悬浮高亮的表格</caption>
 		<thead>
-			<tr class="table-warning">
+			<tr>
 				<th>表格标题</th>
 				<th>表格标题</th>
 				<th>表格标题</th>
@@ -129,9 +169,10 @@
 	</table>
 
 	<h1>紧凑型表格</h1>
-	<table class="table table-condensed">
+	<table class="table table-sm">
+		<caption>紧凑型表格</caption>
 		<thead>
-			<tr class="table-danger">
+			<tr>
 				<th>表格标题</th>
 				<th>表格标题</th>
 				<th>表格标题</th>
@@ -163,38 +204,40 @@
 
 	<h1>响应式表格</h1>
 	<div class="table-responsive">
-		<table class="table table-bordered">
-		<thead>
-			<tr>
-				<th>表格标题</th>
-				<th>表格标题</th>
-				<th>表格标题</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-			</tr>
-			<tr>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-			</tr>
-			<tr>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-			</tr>
-			<tr>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-				<td>表格单元格</td>
-			</tr>
-		</tbody>
+		<table class="table">
+			<caption>响应式表格</caption>
+			<thead>
+				<tr>
+					<th>表格标题</th>
+					<th>表格标题</th>
+					<th>表格标题</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+				</tr>
+				<tr>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+				</tr>
+				<tr>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+				</tr>
+				<tr>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+					<td>表格单元格</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
+	
 	<img src="表格.jpg" alt="">
 
 	<!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
