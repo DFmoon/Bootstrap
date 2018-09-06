@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置为可视区域宽度，原始缩放为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>card</title>   
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">     
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="card ml-4 mt-4" style="width: 18rem; float: left;">
+    	<div class="card-header">
+		    card-header
+		</div>
+	  	<img class="card-img-top" src="表格.jpg" height="200px" alt="Card image cap">
+	  	<div class="card-body">
+	   	 	<h5 class="card-title">Card title</h5>
+	   	 	<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+	    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    	<ul class="list-group list-group-flush">
+			    <li class="list-group-item">list-group-item1</li>
+			    <li class="list-group-item">list-group-item2</li>
+			    <li class="list-group-item">list-group-item3</li>
+		  	</ul>
+	    	<a href="#" class="card-link">Card link</a>
+    		<a href="#" class="card-link">Another link</a>
+	  	</div>
+	  	<img class="card-img-bottom" src="表格.jpg" height="200px" alt="Card image cap">
+	</div>
+
+	<div class="card ml-4 mt-4" style="width: 18rem; float: left;">
+    	<div class="card-header">
+		    card-header
+		</div>
+	  	<img class="card-img" src="表格.jpg" height="200px" alt="Card image cap">
+	  	<div class="card-img-overlay">
+	   	 	<h5 class="card-title">Card title</h5>
+	   	 	<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+	    	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	  	</div>
+	</div>
+	
+
+	<div style="clear:both;"></div>
+	<br><br><br>
+	<div>不同填充风格的容器</div>
+	<div class="card text-white bg-primary mb-3" style="max-width: 18rem; float: left; ">
+  		<div class="card-header bg-primary">primary</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-black bg-secondery mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-secondery">secondery</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-white bg-info mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-info">info</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-white bg-success mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-success">success</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+    <div class="card text-white bg-warning mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-warning">warning</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-white bg-danger mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-danger">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-black bg-light mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-black">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card text-white bg-dark mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header bg-dark">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+
+
+	<div style="clear:both;"></div>
+	<br><br><br>
+	<div>不同边框风格的容器</div>
+	<div class="card border-primary mb-3" style="max-width: 18rem; float: left; ">
+  		<div class="card-header border-primary">primary</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-secondery mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-secondery">secondery</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-info mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-info">info</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-success mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-success">success</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+    <div class="card border-warning mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-warning">warning</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-danger mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-danger">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-light mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-black">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+	<div class="card border-dark mb-3" style="max-width: 18rem; float: left;">
+  		<div class="card-header border-dark">danger</div>
+  		<div class="card-body">
+    		<h5 class="card-title">Primary card title</h5>
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  		</div>
+	</div>
+
+	
+	<div style="clear:both;"></div>
+	<br><br><br>
+	<div>card-group所有card并在一起</div>
+	<div class="card-group">
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="clear:both;"></div>
+	<br><br><br>
+	<div>card-group所有card相互分离</div>
+	<div class="card-deck">
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="clear:both;"></div>
+	<br><br><br>
+	<div>card-group按列排列</div>
+	<div class="card-columns">
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top" src="表格.jpg" width="100" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<div class="card-footer">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+</body>
+</html>

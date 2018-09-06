@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!--设置为可视区域宽度，原始缩放为1-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>响应式图片</title>   
+        <title>导航分割</title>   
         <!-- Bootstrap -->
         <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">     
         <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
@@ -15,17 +15,14 @@
         <![endif]-->
     </head>
     <body>
-    	<img src="表格.jpg" class="img-fluid" alt="responsive image">
+		<nav aria-label="breadcrumb">
+		    <ol class="breadcrumb">
+		        <li class="breadcrumb-item"><a href="#">Home</a></li>
+		        <li class="breadcrumb-item"><a href="#">Library</a></li>
+		        <li class="breadcrumb-item active" aria-current="page">Data</li>
+		    </ol>
+		</nav>
         
-        <!--加边框-->
-        <img src="表格.jpg" class="img-fluid img-thumbnail" alt="responsive image">
-
-        <!--图片位置-->
-		<img src="表格.jpg" class="rounded" alt="responsive image">
-		<img src="表格.jpg" class="rounded float-left" alt="responsive image">
-		<img src="表格.jpg" class="rounded float-right" alt="responsive image">
-		<img src="表格.jpg" class="rounded mx-auto d-block" alt="responsive image">
-
         <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
         <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
         <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
