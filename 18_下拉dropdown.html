@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置为可视区域宽度，原始缩放为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>   
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div style="float:left; margin:100px 100px 0 0; ">
+		按钮下拉
+    	<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a href="#" class="dropdown-header">header</a>
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</div>
+	</div>
+	<div style="float:left; margin:100px 100px 0 0; ">
+		按钮向上展开
+	    <div class="dropup">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</div>
+	</div>
+	<div style="float:left; margin:100px 100px 0 0; ">
+		按钮向右展开
+	    <div class="dropright">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</div>
+	</div>
+	<div style="float:left; margin:100px 100px 0 100px; ">
+		按钮向左展开
+	    <div class="dropleft">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown button
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<br><br><br>
+
+	按钮右侧点击下拉
+	<div class="btn-group">
+		<button class="btn btn-secondary">secondary</button>
+		<button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+		</div>
+	</div>
+	
+	<br><br><br>
+
+	超链接下拉
+	<div class="dropdown">
+		<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Dropdown link
+		</a>
+
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+		</div>
+	</div>
+
+	<br><br><br>
+	
+	不同风格的按钮下拉及下拉菜单分割线
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			primary
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			secondary
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			info
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			success
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			warning
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			danger
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			light
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+
+		<button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			dark
+		</button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">Action</a>
+			<a class="dropdown-item" href="#">Another action</a>
+			<a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Separated link</a>
+		</div>
+	</div>
+
+	<br><br><br>
+	
+	不同尺寸的按钮下拉
+	<div class="btn-group">
+		<button class="btn btn-primary btn-lg " type="button">primary</button>
+		<button class="btn btn-primary btn-lg dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="#">btn-lg</a>
+			<a class="dropdown-item" href="#">btn-lg</a>
+		</div>
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary btn-sm">primary</button>
+		<button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+		<div class="dropdown-menu">
+			<a href="#" class="dropdown-item">btn-sm</a>
+			<a href="#" class="dropdown-item">btn-sm</a>
+		</div>
+	</div>
+
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+
+	
+</body>
+</html>
+		
