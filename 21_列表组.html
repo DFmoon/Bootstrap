@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置为可视区域宽度，原始缩放为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>   
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">     
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="row">
+	  <div class="col-4">
+	    <div class="list-group" id="list-tab" role="tablist">
+	      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+	      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+	      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+	      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+	    </div>
+	  </div>
+	  <div class="col-8">
+	    <div class="tab-content" id="nav-tabContent">
+	      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">1</div>
+	      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
+	      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+	      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div>
+	    </div>
+	  </div>
+	</div>
+    
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+</body>
+</html>
+		
