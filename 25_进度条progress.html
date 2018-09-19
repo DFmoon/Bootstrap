@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置为可视区域宽度，原始缩放为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>进度条</title>   
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>    
+
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress" style="width: 400px; height: 1px;">
+	  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+	</div><br>
+	<div class="progress" style="width: 400px;">
+	<div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-danger" role="danger" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-danger progress-bar-striped" role="danger" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+
+	<div class="progress" style="width: 400px;">
+	  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="danger" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+	</div><br>
+
+	<br>
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+</body>
+</html>
+		

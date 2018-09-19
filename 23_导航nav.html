@@ -77,8 +77,107 @@
 	  <a class="nav-item nav-link" href="#">Link</a>
 	  <a class="nav-item nav-link disabled" href="#">Disabled</a>
 	</nav><br>
+	
+	<label for="">响应式导航</label>
+	<nav class="nav nav-pills flex-column flex-sm-row">
+	  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+	  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+	  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+	  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+	</nav><br>
+
+	<label for="">下拉式导航</label>
+	<ul class="nav nav-pills">
+	  <li class="nav-item">
+	    <a class="nav-link active" href="#">Active</a>
+	  </li>
+	  <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+	    <div class="dropdown-menu">
+	      <a class="dropdown-item" href="#">Action</a>
+	      <a class="dropdown-item" href="#">Another action</a>
+	      <a class="dropdown-item" href="#">Something else here</a>
+	      <div class="dropdown-divider"></div>
+	      <a class="dropdown-item" href="#">Separated link</a>
+	    </div>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Link</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link disabled" href="#">Disabled</a>
+	  </li>
+	</ul><br><br><br>
+
+	<label for="">选项卡导航</label>
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	  <li class="nav-item">
+	    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+	  </li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+	  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">1</div>
+	  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+	  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+	</div><br><br><br>
+
+	<label for="">综合导航</label>
+	<nav class="navbar navbar-expand-lg navbar-primary bg-light">
+	  <a class="navbar-brand" href="#">Navbar</a>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Dropdown
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav><br><br><br>
+
+	<div class="pos-f-t">
+	  <div class="collapse" id="navbarToggleExternalContent">
+	    <div class="bg-dark p-4">
+	      <h5 class="text-white h4">Collapsed content</h5>
+	      <span class="text-muted">Toggleable via the navbar brand.</span>
+	    </div>
+	  </div>
+	  <nav class="navbar navbar-dark bg-dark">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	  </nav>
+	</div><br><br><br>
     <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
     <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
 </body>
