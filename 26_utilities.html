@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置为可视区域宽度，原始缩放为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>   
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">     
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和css3 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    	label{color:red;}
+    	span{display:block; height: 50px; width: 50px; float: left; margin-right: 20px; background: #f8f8ff;}
+    	img{display: block; height: 50px; width: 50px;float: left; margin-right: 20px;}
+    </style>
+</head>
+<body>
+    <label for="">边框</label><br>
+    <span class="border"></span>
+	<span class="border-top"></span>
+	<span class="border-right"></span>
+	<span class="border-bottom"></span>
+	<span class="border-left"></span>
+	<span class="border border-primary"></span>
+	<span class="border border-secondary"></span>
+	<span class="border border-info"></span>
+	<span class="border border-success"></span>
+	<span class="border border-warning"></span>
+	<span class="border border-danger"></span>
+	<span class="border border-light"></span>
+	<span class="border border-dark"></span>
+	<span class="border border-white"></span>
+	<img src="2.jpg" alt="..." class="rounded">
+	<img src="2.jpg" alt="..." class="rounded-top">
+	<img src="2.jpg" alt="..." class="rounded-right">
+	<img src="2.jpg" alt="..." class="rounded-bottom">
+	<img src="2.jpg" alt="..." class="rounded-left">
+	<img src="2.jpg" alt="..." class="rounded-circle">
+	<img src="2.jpg" alt="..." class="rounded-0">
+	<br><br><br><br><br><br>
+	<label for="">清除浮动</label><br>
+	<div class="bg-info clearfix">
+  		<button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+  		<button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+	</div>
+	<br><br><br>
+	<label for="">关闭符号</label><br>
+	<button type="button" class="close" aria-label="Close" style="float: left;">
+	  	<span aria-hidden="true">&times;</span>
+	</button>
+	<br><br><br>
+	<label for="">嵌入内框架，可自定义比例，默认没有边框</label><br>
+	<div class="embed-responsive embed-responsive-16by9" style="background: #f8f8ff; width: 400px;">
+		 <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+	</div> 
+	<br><br><br>
+	<label for="">flex排版</label><br>
+	<div class="d-flex p-2 bg-primary">I'm a flexbox container!</div><br>
+	<div class="d-inline-flex p-2 bg-primary">I'm an inline flexbox container!</div><br><br>
+	<div class="d-flex flex-row bg-secondary">
+	  	<div class="p-2 bg-primary">flex-row1</div>
+	 	<div class="p-2 bg-primary">flex-row2</div>
+	  	<div class="p-2 bg-primary">flex-row3</div>
+	</div><br>
+	<div class="d-flex flex-row-reverse bg-secondary">
+	  	<div class="p-2 bg-primary">flex-row-reverse1</div>
+	  	<div class="p-2 bg-primary">flex-row-reverse2</div>
+	  	<div class="p-2 bg-primary">flex-row-reverse3</div>
+	</div><br>
+	<div class="d-flex flex-column" style="width: 400px;">
+	  	<div class="p-2 bg-info">flex-column1</div>
+	  	<div class="p-2 bg-info">flex-column2</div>
+	  	<div class="p-2 bg-info">flex-column3</div>
+	</div><br>
+	<div class="d-flex flex-column-reverse" style="width: 400px;">
+	  	<div class="p-2 bg-success">flex-column-reverse1</div>
+	  	<div class="p-2 bg-success">flex-column-reverse2</div>
+	  	<div class="p-2 bg-success">flex-column-reverse3</div>
+	</div><br>
+	<div class="d-flex justify-content-start bg-secondary">
+		<div class="p-2 bg-primary">justify-content-start1</div>
+	  	<div class="p-2 bg-primary">justify-content-start2</div>
+	  	<div class="p-2 bg-primary">justify-content-start3</div>
+	</div><br>
+	<div class="d-flex justify-content-end bg-secondary">
+		<div class="p-2 bg-primary">justify-content-end1</div>
+	  	<div class="p-2 bg-primary">justify-content-end2</div>
+	  	<div class="p-2 bg-primary">justify-content-end3</div>
+	</div><br>
+	<div class="d-flex justify-content-center bg-secondary">
+		<div class="p-2 bg-primary">justify-content-center1</div>
+	  	<div class="p-2 bg-primary">justify-content-center2</div>
+	  	<div class="p-2 bg-primary">justify-content-center3</div>
+	</div><br>
+	<div class="d-flex justify-content-between bg-secondary">
+		<div class="p-2 bg-primary">justify-content-between1</div>
+	  	<div class="p-2 bg-primary">justify-content-between2</div>
+	  	<div class="p-2 bg-primary">justify-content-between3</div>
+	</div><br>
+	<div class="d-flex justify-content-around bg-secondary">
+		<div class="p-2 bg-primary">justify-content-around1</div>
+	  	<div class="p-2 bg-primary">justify-content-around2</div>
+	  	<div class="p-2 bg-primary">justify-content-around3</div>
+	</div><br>
+	<div class="d-flex align-items-start bg-secondary" style="height: 100px; width: 400px;">
+		<div class="p-2 bg-primary">align-items-start1</div>
+	  	<div class="p-2 bg-primary">align-items-start2</div>
+	  	<div class="p-2 bg-primary">align-items-start3</div>
+	</div><br>
+	<div class="d-flex align-items-end bg-secondary" style="height: 100px; width: 400px;">
+		<div class="p-2 bg-primary">align-items-end1</div>
+	  	<div class="p-2 bg-primary">align-items-end2</div>
+	  	<div class="p-2 bg-primary">align-items-end3</div>
+	</div><br>
+	<div class="d-flex align-items-center bg-secondary" style="height: 100px; width: 400px;">
+		<div class="p-2 bg-primary">align-items-center1</div>
+	  	<div class="p-2 bg-primary">align-items-center2</div>
+	  	<div class="p-2 bg-primary">align-items-center3</div>
+	</div><br>
+	<div class="d-flex align-items-baseline bg-secondary" style="height: 100px; width: 400px;">
+		<div class="p-2 bg-primary">align-items-baseline1</div>
+	  	<div class="p-2 bg-primary">align-items-baseline2</div>
+	  	<div class="p-2 bg-primary">align-items-baseline3</div>
+	</div><br>
+	<div class="d-flex align-items-stretch bg-secondary" style="height: 100px; width: 400px;">
+		<div class="p-2 bg-primary">align-items-stretch1</div>
+	  	<div class="p-2 bg-primary">align-items-stretch2</div>
+	  	<div class="p-2 bg-primary">align-items-stretch3</div>
+	</div><br>
+	<div class="d-flex align-items-stretch bg-secondary" style="height: 100px;">
+		<div class="p-2 bg-primary">Flex item 1</div>
+		<div class="align-self-start bg-warning">align-self-start</div>
+	  	<div class="p-2 bg-primary">Flex item 2</div>
+	  	<div class="align-self-end bg-warning">align-self-end</div>
+	  	<div class="p-2 bg-primary">Flex item 3</div>
+	  	<div class="align-self-center bg-warning">align-self-center</div>
+	  	<div class="p-2 bg-primary">Flex item 4</div>
+	  	<div class="align-self-baseline bg-warning">align-self-baseline</div>
+	  	<div class="p-2 bg-primary">Flex item 5</div>
+	  	<div class="align-self-stretch bg-warning">align-self-stretch</div>
+	  	<div class="p-2 bg-primary">Flex item 6</div>
+	</div><br>
+	<div class="d-flex bg-secondary">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary">
+	  	<div class="mr-auto p-2 bg-primary">mr-auto</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="ml-auto p-2 bg-primary">ml-auto</div>
+	</div><br>
+	<div class="d-flex align-items-start flex-column bg-secondary" style="height: 200px; width: 400px;">
+	  	<div class="mb-auto p-2 bg-primary">mb-auto</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex align-items-start flex-column bg-secondary" style="height: 200px; width: 400px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="mt-auto p-2 bg-primary">mt-auto</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-nowrap" style="width: 400px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap" style="width: 400px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap-reverse" style="width: 400px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary" style="width: 400px;">
+	  	<div class="order-3 p-2 bg-primary">Flex item1</div>
+	  	<div class="order-2 p-2 bg-primary">Flex item2</div>
+	  	<div class="order-1 p-2 bg-primary">Flex item3</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-start" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-end" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-center" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-between" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-around" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<div class="d-flex bg-secondary flex-wrap align-content-stretch" style="width: 400px; height: 200px;">
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	  	<div class="p-2 bg-primary">Flex item</div>
+	</div><br>
+	<label for="">文字溢出，大小写转换、样式</label>
+	<div class="row">
+	  	<div class="col-2 text-truncate">
+	    	Praeterea iter est quasdam res quas ex communi.
+	  	</div>
+	</div>
+	<p class="text-lowercase">Lowercased text.</p>
+	<p class="text-uppercase">Uppercased text.</p>
+	<p class="text-capitalize">CapiTaliZed text.</p>
+	<p class="font-weight-bold">Bold text.</p>
+	<p class="font-weight-normal">Normal weight text.</p>
+	<p class="font-weight-light">Light weight text.</p>
+	<p class="font-italic">Italic text.</p>
+
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> 
+</body>
+</html>
+		

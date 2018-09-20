@@ -18,96 +18,24 @@
         </style>
     </head>
     <body>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-5" style="background: #FFDAB9">
-					One of three columns
-				</div>
-				<div class="col-sm-4" style="background: #00FFFF">
-					One of three columns
-				</div>
-				<div class="col-sm-2" style="background: #76EEC6">
-					One of three columns
-				</div>
-				<div class="col-sm-1" style="background: #FFE4E1">
-					One of three columns
-				</div>
-			</div>
-			<div class="w-100"></div>
-			<div class="row">
-				<div class="col-sm-5" style="background: #696969">
-					One of three columns
-				</div>
-				<div class="col-sm-4" style="background: #4EEE94">
-					One of three columns
-				</div>
-				<div class="col-sm-2" style="background: #483D8B">
-					One of three columns
-				</div>
-				<div class="col-sm-1" style="background: #B3EE3A">
-					One of three columns
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row justify-content-start">
-			    <div class="col-4" style="background: #FFDAB9">
-			    	One of three columns
-			    </div>
-			    <div class="col-4" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-  			</div>
-  			<div class="row justify-content-center">
-			    <div class="col-4" style="background: #FFDAB9">
-			    	One of three columns
-			    </div>
-			    <div class="col-4" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-  			</div>
-			<div class="row justify-content-end">
-			    <div class="col-4" style="background: #FFDAB9">
-			    	One of three columns
-			    </div>
-			    <div class="col-4" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-  			</div>
-  			<div class="row justify-content-around">
-			    <div class="col-4" style="background: #FFDAB9">
-			    	One of three columns
-			    </div>
-			    <div class="col-4" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-  			</div>
-  			<div class="row justify-content-between">
-			    <div class="col-4" style="background: #FFDAB9">
-			    	One of three columns
-			    </div>
-			    <div class="col-4" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-  			</div>
-			<br>
-			<br>
-  			<div class="row">
-			    <div class="col-2 order-4 offset-1" style="background: #FFDAB9">
-			    	One of three columns order-4
-			    </div>
-			    <div class="col-2 offset-1" style="background: #4EEE94">
-			     	One of three columns
-			    </div>
-			    <div class="col-2 order-2 ml-auto" style="background: #FFDAB9">
-			    	One of three columns order-2
-			    </div>
-			    <div class="col-2 order-first mr-auto" style="background: #4EEE94">
-			     	One of three columns order-first
-			    </div>
-  			</div>
+    	<div class="row">
+		<div id="list-example" class="list-group col-sm-4" >
+		  <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+		  <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+		  <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+		  <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
 		</div>
-        
+		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-sm-8">
+		  <h4 id="list-item-1">Item 1</h4>
+		  <p>...</p>
+		  <h4 id="list-item-2">Item 2</h4>
+		  <p>...</p>
+		  <h4 id="list-item-3">Item 3</h4>
+		  <p>...</p>
+		  <h4 id="list-item-4">Item 4</h4>
+		  <p>...</p>
+		</div>
+        </div>
         <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
         <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
         <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
