@@ -15,12 +15,13 @@
     <![endif]-->
 </head>
 <body>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 600px;">
+    <!--data-interval="500" data-pause="hover" data-wrap="true"分别表示时间间隔，鼠标悬停，循环播放-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 600px;" data-interval="500" data-pause="hover" data-wrap="true">
         <!--底部横线指示-->
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
         </ol>
         <!--主体的切换-->
   		<div class="carousel-inner">
